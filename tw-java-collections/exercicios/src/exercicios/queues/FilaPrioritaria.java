@@ -38,7 +38,7 @@ class Estudante implements Comparable<Estudante> {
 		} else if (this.getNota() < o.getNota()) {
 			return 1;
 		} 
-		if (this.getNome().compareTo(o.getNome()) == 0) {
+		if (this.getNome().equals(o.getNome())) {
 			if (this.getId() > o.getId()) {
 				return -1;
 			} else if (this.getId() < o.getId()) {

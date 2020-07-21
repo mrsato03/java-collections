@@ -1,0 +1,19 @@
+package br.com.treinaweb.java.collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import br.com.treinaweb.java.collections.models.Pessoa;
+
+public class MainMap {
+
+	public static void main(String[] args) {
+		Map<String, Pessoa> mapaPessoas = new HashMap<String, Pessoa>();
+		System.out.println(mapaPessoas.put("legal", new Pessoa(1, "Henrique 1")));
+		System.out.println(mapaPessoas);
+		System.out.println(mapaPessoas.put("legal", new Pessoa(2, "Henrique 1")));
+		System.out.println(mapaPessoas);
+		mapaPessoas.put(null, new Pessoa(-1, "NULO"));
+	}
+
+}

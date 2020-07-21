@@ -1,0 +1,16 @@
+package exercicios.sets;
+
+public class MainCarro {
+	public static void main(String args[]) 
+    {
+        Set<Carro> colecao = new TreeSet<>();  
+        
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNext()){
+            colecao.add(new Carro(sc.next(), sc.next(), sc.nextInt()));
+        }
+        
+        for(Carro c : colecao)
+            System.out.println(c);
+    }
+}

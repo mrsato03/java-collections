@@ -1,0 +1,10 @@
+package br.com.treinaweb.java.collections;
+
+public class MainQeue {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

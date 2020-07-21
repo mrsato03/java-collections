@@ -1,0 +1,58 @@
+package exercicios.hashTables;
+
+import java.util.Hashtable;
+import java.util.Scanner;
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+
+class Produto {
+    private String nome;
+    private double preco;
+    
+    public Produto(String nome, double preco)
+    {
+        this.nome = nome;
+        this.preco = preco;
+    }
+    
+    public String getNome()
+    {
+        return this.nome;
+    }
+    
+    public double getPreco()
+    {
+        return this.preco;
+    }
+    
+    public void setPreco(double preco)
+    {
+        this.preco = preco;
+    }
+}
+
+public class Programa {
+	    public static void main(String args[]) 
+	    {
+	        Hashtable<Integer, Produto> estoque = new Hashtable<Integer, Produto>();
+	        
+	        Scanner sc = new Scanner(System.in);
+	        int count = 0;
+	        while(sc.hasNext()){
+	            estoque.put(++count, new Produto(sc.next(), sc.nextDouble()));
+	        }
+	        
+//	        BiFunction<Integer, Produto, Produto> funcaoAlterarEstoque = estoque.forEach((chave, valor) -> {
+//	        	
+//	        });
+	                
+	        BiConsumer<Integer, Produto> exibirEstoque = estoque.forEach((chave, valor) -> {
+	        	System.out.println(String.format("[%d] %s - %s", chave, valor.getNome(), valor.getPreco()));
+	        	return chave;
+	        });
+
+	        estoque.replaceAll(funcaoAlterarEstoque);
+	        estoque.forEach(exibirEstoque);
+	    }
+	
+}

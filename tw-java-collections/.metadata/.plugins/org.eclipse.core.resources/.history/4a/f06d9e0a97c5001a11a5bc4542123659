@@ -1,0 +1,17 @@
+package br.com.treinaweb.java.collections;
+
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+import br.com.treinaweb.java.collections.models.Pessoa;
+
+public class MainQueue {
+
+	public static void main(String[] args) {
+		Queue<Pessoa> queue = new PriorityQueue<Pessoa>();
+		queue.add(new Pessoa(3, "Henrique 3"));
+		queue.add(new Pessoa(1, "Henrique 1"));
+		queue.add(new Pessoa(2, "Henrique 2"));
+	}
+
+}

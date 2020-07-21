@@ -1,0 +1,42 @@
+2020-07-12 15:58:36,668 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-12 15:58:50,379 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-12 18:54:56,682 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-12 18:55:18,905 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-12 19:09:03,284 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-12 19:09:08,512 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-12 19:24:46,765 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-12 19:24:51,956 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-12 20:49:48,693 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-12 20:49:55,872 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-13 06:10:53,036 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-13 06:11:00,564 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-13 17:59:37,995 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-13 17:59:45,317 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-13 22:03:08,801 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-13 22:03:15,800 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-14 00:54:32,800 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-14 00:54:43,496 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-14 04:02:41,879 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-14 04:02:51,093 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-14 08:51:11,590 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-14 08:51:17,334 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-14 18:30:16,873 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-14 18:31:02,211 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-14 21:45:05,768 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-14 21:45:10,904 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-15 00:24:46,096 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-15 00:24:54,132 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-15 20:14:28,095 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-15 20:14:37,046 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-15 20:58:30,853 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-15 20:58:36,585 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-15 22:16:24,349 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-15 22:16:32,345 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-16 18:22:40,865 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-16 18:22:50,170 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-17 00:51:07,738 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-17 00:51:16,263 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-17 02:04:17,151 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-17 02:04:23,473 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-17 02:05:51,900 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-07-17 02:05:55,980 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

@@ -1,0 +1,12 @@
+package exercicios;
+
+public class ProgramaArrayList {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		ArrayList<ArrayList<Integer>> linhas = new ArrayList<ArrayList<Integer>>();
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package exercicios.hashMaps;
+
+class Produto {
+    private String nome;
+    private double preco;
+    
+    public Produto(String nome, double preco)
+    {
+        this.nome = nome;
+        this.preco = preco;
+    }
+    
+    public String toString()
+    {
+        return String.format("%s - R$%5.2f", nome, preco);
+    }
+}
+
+public class MainHashMap {
+
+	public static void main(String[] args) {
+
+
+		estoque.forEach((chave, valor) -> System.out.println(String.format("%d=%s", chave, valor)));
+	}
+
+}

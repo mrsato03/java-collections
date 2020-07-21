@@ -1,0 +1,51 @@
+package exercicios.hashTables;
+
+import java.util.Hashtable;
+import java.util.Iterator;
+
+public class MainHashTable {
+
+	public static void main(String args[]) 
+	    {
+//	        for(Method declaredMethod : Programa.class.getDeclaredMethods())
+//	        {
+//	            Class<?>[] exceptionTypes = declaredMethod.getExceptionTypes();
+//	            if(exceptionTypes.length > 0)
+//	            {
+//	                System.out.println("Não deveria, mas implementei no método:");
+//	                for (Class<?> exception: exceptionTypes){
+//	                    System.out.println(exception);
+//	                }
+//	            }
+//	        }
+//	        
+	        Hashtable<String, String> dicionario = new Hashtable<String, String>();
+	        dicionario.put("gato", "é um mamífero carnívoro da família dos felídeos ");
+	        dicionario.put("cachorro", "é um mamífero carnívoro da família dos canídeos");
+	        
+	        Iterator<String> it = dicionario.keySet().iterator();
+	        
+	        try
+	        {
+	            geraExcecao(dicionario);
+	            
+	            while (it.hasNext()) {
+	                String chave = it.next();
+	                System.out.println(chave + " - " + dicionario.get(chave));
+	            }
+	            
+	        }catch(Exception ex)
+	        {
+	            System.out.println(ex.getClass().getName());
+	        }
+	   }
+
+	private static void geraExcecao(Hashtable<String, String> dicionario) {
+		Iterator<String> iteratorChaves = dicionario.keySet().iterator();
+		dicionario.remove("gato");
+	}
+
+	        
+}
+
+	

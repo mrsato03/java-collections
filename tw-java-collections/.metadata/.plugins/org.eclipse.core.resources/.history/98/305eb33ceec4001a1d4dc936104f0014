@@ -1,0 +1,7 @@
+package br.com.treinaweb.java.collections.comparadores;
+
+import java.util.Comparator;
+
+public class PessoaTamanhoNomeComparator implements Comparator<T>{
+
+}

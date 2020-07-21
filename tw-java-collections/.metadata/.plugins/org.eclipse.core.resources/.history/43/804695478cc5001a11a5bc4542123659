@@ -1,0 +1,26 @@
+package br.com.treinaweb.java.collections;
+
+import java.util.NavigableSet;
+import java.util.TreeSet;
+
+import br.com.treinaweb.java.collections.models.Pessoa;
+
+public class MainSet {
+
+	public static void main(String[] args) {
+		NavigableSet<Pessoa> set = new TreeSet<Pessoa>();
+		set.add(new Pessoa(3, "Henrique 3"));
+		set.add(new Pessoa(1, "Henrique 1"));
+		set.add(new Pessoa(2, "Henrique 2"));
+		Pessoa teste = set.higher(new Pessoa(2, "Henrique 2"));
+////		set.add(null);
+//		System.out.println(set);
+////		set.add(new Pessoa(2, "Henrique 2"));
+//		System.out.println(set);
+//		
+//		for (Pessoa p : set) {
+//			System.out.println(p);
+//		}
+	}
+
+}

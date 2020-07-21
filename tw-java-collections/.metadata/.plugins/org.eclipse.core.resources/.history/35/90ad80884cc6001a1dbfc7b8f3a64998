@@ -1,0 +1,14 @@
+package br.com.treinaweb.java.collections;
+
+import java.util.HashSet;
+
+import br.com.treinaweb.java.collections.models.Pessoa;
+
+public class MainSet2 {
+
+	public static void main(String[] args) {
+		HashSet<Pessoa> pessoas = new HashSet<Pessoa>();
+		pessoas.add(new Pessoa(1, "Henrique 1"));
+	}
+
+}

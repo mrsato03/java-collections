@@ -1,0 +1,12 @@
+package br.com.treinaweb.java.collections;
+
+import java.util.HashMap;
+
+public class MainMap {
+
+	public static void main(String[] args) {
+		Map<String, Pessoa> mapaPessoas = new HashMap<String, Pessoa>();
+
+	}
+
+}

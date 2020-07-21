@@ -1,0 +1,41 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ArrayList {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o tamanho do array: ");
+		int tamanho = Integer.parseInt(sc.next());
+		
+		ArrayList<ArrayList<Integer>> linhas = new ArrayList<ArrayList<Integer>>();
+		// Ocupar o indice 0
+		linhas.add(null);
+		
+		// Percorre as linhas
+		for (int i = 0; i < tamanho; i++) {
+			// Cria a coluna de uma linha
+			ArrayList<Integer> colunas = new ArrayList<Integer>();
+			String[] arrayFrase = sc.nextLine().split("\s");
+			
+			for (int j = 0; j < arrayFrase.length; j++) {
+				int valor = Integer.parseInt(arrayFrase[j]);
+				colunas.add(valor);
+			}
+			linhas.add(colunas);	
+		}
+		
+		System.out.println("Deseja procurar quantos elementos? ");
+		int busca = Integer.parseInt(sc.next());
+		
+		for (int i = 0; i < busca; i++) {
+			int x = Integer.parseInt(sc.next()), y = Integer.parseInt(sc.next());
+			System.out.println(linhas.get(x).get(y));
+		}
+		
+		sc.close();
+	}
+	
+}

@@ -1,0 +1,52 @@
+package br.com.treinaweb.collections;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import br.com.treinaweb.java.collections.models.Pessoa;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		List<Pessoa> pessoas = new ArrayList<Pessoa>();
+		pessoas.add(new Pessoa(1, "Henrique 1"));
+		pessoas.add(new Pessoa(2, "Henrique 2"));
+		pessoas.add(new Pessoa(2, "Henrique 3"));
+		
+		pessoas.remove(new Pessoa(1, "Henrique 1"));
+		
+		System.out.println(pessoas.contains(new Pessoa(2, "Henrique 2")));
+		
+		System.out.println(pessoas);
+		
+		
+//		System.out.println("Com FOR: ");
+//		for (int i = 0; i < pessoas.size(); i++) {
+//			Pessoa p = pessoas.get(i);
+//			System.out.println(p);
+//		}
+		
+//		System.out.println("Com ITERATOR: ");
+//		Iterator<Pessoa> iteratorPessoa = pessoas.iterator();
+//		while (iteratorPessoa.hasNext()) {
+//			Pessoa p = iteratorPessoa.next();
+//			if (p.getId() == 1) {
+////				pessoas.remove(p);
+//				iteratorPessoa.remove();
+//			}
+//			System.out.println(p);
+//		}
+//		pessoas.removeIf(p -> p.getId() == 1);
+//		System.out.println(pessoas);
+//		
+		// For-each
+//		System.out.println("Com FOREACH: ");
+//		for (Pessoa p : pessoas) {
+//			System.out.println(p);
+//		}
+		
+		System.out.println("FIM!");
+	}
+}

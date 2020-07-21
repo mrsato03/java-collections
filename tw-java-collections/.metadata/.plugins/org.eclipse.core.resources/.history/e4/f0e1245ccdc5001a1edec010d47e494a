@@ -1,0 +1,28 @@
+package exercicios.queues;
+
+import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class MainQueues {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Queue<String> fila = new PriorityQueue<>();
+		String input = sc.next();
+		String[] separado = input.split("");
+		fila.addAll(Arrays.asList(separado));
+
+		fila.forEach(p -> fila.poll());
+		
+		if (fila.isEmpty()) {
+			System.out.println("Balanceada");
+		} else {
+			System.out.println("Não balanceada");
+		}
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,79 @@
+package exercicios.sets;
+
+public class Carro implements Comparable<Carro> {
+	private String marca;
+	private String modelo;
+	private int ano;
+
+	public Carro(String marca, String modelo, int ano) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.ano = ano;
+	}
+
+	public String getMarca() {
+		return this.marca;
+	}
+	
+	public String getModelo() {
+		return this.modelo;
+	}
+	
+	public int getAno() {
+		return this.ano;
+	}
+	
+	@Override
+	public String toString() {
+		return marca + " - " + modelo + " - " + ano;
+	}
+
+	
+	
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((marca == null) ? 0 : marca.hashCode());
+		result = prime * result + ((modelo == null) ? 0 : modelo.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Carro other = (Carro) obj;
+		if (marca == null) {
+			if (other.marca != null)
+				return false;
+		} else if (!marca.equals(other.marca))
+			return false;
+		if (modelo == null) {
+			if (other.modelo != null)
+				return false;
+		} else if (!modelo.equals(other.modelo))
+			return false;
+		return true;
+	}
+
+	@Override
+	public int compareTo(Carro o) {
+		if (this.getMarca().compareTo(o.getMarca()) == 0) {
+			if (this.getModelo().compareTo(o.getModelo()) == 0) {
+				if (this.getAno() < o.getAno()) {
+					return -1;
+				}
+				return 1;
+			}
+			return this.getModelo().compareTo(o.getModelo());
+		}
+		return this.getMarca().compareTo(o.getMarca());
+	}
+
+}

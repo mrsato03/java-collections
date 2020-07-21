@@ -1,0 +1,13 @@
+package br.com.treinaweb.java.collections;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class MainSet {
+
+	public static void main(String[] args) {
+		Set<Integer> set = new HashSet<Integer>();
+
+	}
+
+}

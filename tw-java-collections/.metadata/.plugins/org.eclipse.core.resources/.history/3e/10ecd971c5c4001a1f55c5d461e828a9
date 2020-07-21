@@ -1,0 +1,32 @@
+package exercicios.iterators;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class ProgramaIterators {
+
+	public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+
+        Lista<Integer> lista = new Lista<Integer>(); 
+        for (int i = 0; i < n; i++) {
+            int valor = scan.nextInt();
+            lista.inserir(valor);
+        }
+        
+        for(int valor : lista){
+            System.out.print(valor + " ");
+        }
+    }
+}
+
+class Lista<T> implements Iterable<T> {
+
+	@Override
+	public Iterator iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

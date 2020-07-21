@@ -1,0 +1,32 @@
+package exercicios.hashMaps;
+
+import java.util.Scanner;
+import java.util.TreeMap;
+
+class Produto {
+    private String nome;
+    private double preco;
+    
+    public Produto(String nome, double preco)
+    {
+        this.nome = nome;
+        this.preco = preco;
+    }
+    
+    public String toString()
+    {
+        return String.format("%s - R$%5.2f", nome, preco);
+    }
+}
+
+public class MainHashMap {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Map<Integer, Produto> estoque = new TreeMap<Integer, Produto>(new Comparator<Integer>() {
+		
+		});
+		estoque.forEach((chave, valor) -> System.out.println(String.format("%d=%s", chave, valor)));
+	}
+
+}

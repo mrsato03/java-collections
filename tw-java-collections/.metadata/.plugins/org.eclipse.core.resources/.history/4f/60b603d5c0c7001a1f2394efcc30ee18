@@ -1,0 +1,21 @@
+package exercicios.hashTables;
+
+public class Programa {
+	public class Programa 
+	{
+	    public static void main(String args[]) 
+	    {
+	        Hashtable<Integer, Produto> estoque = new Hashtable<Integer, Produto>();
+	        
+	        Scanner sc = new Scanner(System.in);
+	        int count = 0;
+	        while(sc.hasNext()){
+	            estoque.put(++count, new Produto(sc.next(), sc.nextDouble()));
+	        }
+	        
+
+	        estoque.replaceAll(funcaoAlterarEstoque);
+	        estoque.forEach(exibirEstoque);
+	    }
+	}
+}

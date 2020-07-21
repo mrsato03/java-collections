@@ -1,0 +1,98 @@
+package exercicios.queues;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Scanner;
+
+class Estudante {
+	private int id;
+	private String nome;
+	private double nota;
+	
+	public Estudante(int id, String nome, double nota) {
+		this.id = id;
+		this.nome = nome;
+		this.nota = nota;
+	}
+	
+	public int getId() {
+		return this.id;
+	}
+	
+	public String getNome() {
+		return this.nome;
+	}
+	
+	public double getNota() {
+		return this.nota;
+	}
+}
+
+class Prioridades {
+
+	public List<Estudante> getEstudantes(List<String> eventos) {
+		Queue<Estudante> fila = new PriorityQueue<Estudante>(new Comparador());
+		for (String eve : eventos) {
+			String[] editado = eve.split(" ");
+			int id = Integer.parseInt(editado[3]);
+			String nome = editado[1];
+			double nota = Double.parseDouble(editado[2]);
+			Estudante estudante = new Estudante(id, nome, nota);
+			fila.add(estudante);
+			System.out.println(fila);
+		}
+		
+		return null;
+	}
+	
+}
+
+class Comparador implements Comparator<Estudante> {
+	@Override
+	public int compare(Estudante o1, Estudante o2) {
+		// Compara Nota
+		if (o1.getNota() > o2.getNota()) {
+			return 1;
+		} else if (o1.getNota() < o2.getNota()) {
+			return -1;
+		} 
+		if (o1.getNome().compareTo(o2.getNome()) == 0) {
+			if (o1.getId() > o2.getId()) {
+				return 1;
+			} else if (o1.getId() < o2.getId()) {
+				return -1;
+			}
+		}
+		return o1.getNome().compareTo(o2.getNome());
+	}
+}
+
+public class FilaPrioritaria {
+
+	private final static Scanner scan = new Scanner(System.in);
+    private final static Prioridades prioridades = new Prioridades();
+    
+    public static void main(String[] args) {
+        int totalEventos = Integer.parseInt(scan.nextLine());    
+        List<String> eventos = new ArrayList<>();
+        
+        while (totalEventos-- != 0) {
+            String evento = scan.nextLine();
+            eventos.add(evento);
+        }
+        
+        List<Estudante> estudantes = prioridades.getEstudantes(eventos);
+        
+//        if (estudantes.isEmpty()) {
+//            System.out.println("VAZIO");
+//        } else {
+//            for (Estudante st: estudantes) {
+//                System.out.println(st.getNome());
+//            }
+//        }
+    }
+
+}
